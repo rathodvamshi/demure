@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Minimals'</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f7f5f2;
+      padding-top: 56px; /* Space for the fixed navbar */
+    }
+
+    .navbar {
+      background-color: #f8f9fa;
+      margin-bottom: 50px;
+    }
+
+    .navbar-brand img {
+      max-height: 40px;
+      margin-right: 10px;
+    }
+
+    .heading {
+      text-align: center;
+      font-style: italic;
+      font-size: 50px;
+      color: rgb(144, 110, 67);
+      margin-top: 30px;
+    }
+
+    .sub-heading {
+      text-align: center;
+      font-size: 25px;
+      color: rgb(80, 57, 29);
+    }
+
+    .description {
+      text-align: center;
+      font-size: 18px;
+      margin: 10px 20px;
+    }
+
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 30px;
+      padding: 30px;
+    }
+
+    .grid-item {
+      background-color: #fff;
+      padding: 15px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .grid-item:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    .grid-item img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+
+    h4 {
+      font-size: 24px;
+      font-style: oblique;
+      margin: 10px 0;
+      color: rgb(79, 57, 25);
+    }
+
+    p {
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+      <img src="./WhatsApp Image 2024-10-11 at 13.06.02_61f9989b.jpg" alt="Logo" style="border-radius: 50px; width: 50px;" >
+      Minimals'
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Login</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Signup</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Main Content -->
+<h1 class="heading">Minimals'</h1>
+<h3 class="sub-heading">~ Less is more!</h3>
+<p class="description">A design aesthetic known as minimalism emphasizes simplicity, balance, and contrast. It has gained prominence in modern society.</p>
+<p class="description">Minimal art and design use the smallest range of materials and colors, focusing on simple forms.</p>
+
+<div class="grid-container">
+  <div class="grid-item">
+    <img src="./m1.jpg" alt="Minimal Accessories">
+    <h4>Minimal Accessories</h4>
+    <p>Oxidized minimal rings add subtle style to your party look. These timeless designs are perfect for any fashionable wardrobe.</p>
+  </div>
+  <div class="grid-item">
+    <img src="./m2.jpg" alt="Fashion Ring Set">
+    <h4>Fashion Ring Set</h4>
+    <p>Designed to be striking yet subtle, these rings offer charm and elegance for any occasion.</p>
+  </div>
+  <div class="grid-item">
+    <img src="./m3.jpg" alt="Elegant Earrings">
+    <h4>Elegant Earrings</h4>
+    <p>Intricate high-polish earrings add luxurious reflections, perfect for gifting or personal use.</p>
+  </div>
+  <div class="grid-item">
+    <img src="./m4.jpg" alt="Minimal Gold Pendant">
+    <h4>Minimal Gold Pendant</h4>
+    <p>This multi-layer heart charm necklace adds glam and grace to any outfit, ideal for modern fashionistas.</p>
+  </div>
+</div>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

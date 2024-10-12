@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Demure Website</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      scroll-behavior: smooth;
+    }
+
+    /* Navbar */
+    .navbar {
+      background-color: #fff;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      padding: 10px 20px;
+    }
+
+    .navbar-brand img {
+      max-height: 50px;
+      margin-right: 10px;
+    }
+
+    .navbar-nav a {
+      margin-right: 15px;
+    }
+
+    .title {
+      text-align: center;
+      margin-top: 20px;
+      font-size: 32px;
+      font-weight: bold;
+      color: #333;
+    }
+
+    /* Flexbox Image Container */
+    .image-container {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      padding: 20px;
+      gap: 15px;
+    }
+
+    .card {
+      width: 400px;
+      height: 300px;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s, background-color 0.3s;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+    }
+
+    .card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+      background-color: rgba(0, 0, 0, 0.3);
+    }
+
+    .random-name {
+      display: none;
+      position: absolute;
+      color: white;
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    .card:hover .random-name {
+      display: block;
+    }
+
+    /* About and Contact Sections */
+    .section {
+      padding: 40px 20px;
+      text-align: center;
+      background-color: #f5f5f5;
+      margin-top: 20px;
+    }
+
+    .section h2 {
+      margin-bottom: 15px;
+      font-size: 28px;
+      color: #333;
+    }
+
+    .section p {
+      font-size: 16px;
+      color: #555;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #333;
+      color: white;
+      padding: 10px 0;
+      text-align: center;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+
+    footer .social-icons a {
+      color: white;
+      margin: 0 10px;
+      font-size: 24px;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#"><img src="./WhatsApp Image 2024-10-11 at 13.06.02_61f9989b.jpg" alt="Demure Logo" style="border-radius: 50px;"> DEMURE</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about-us">About Us</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact-us">Contact Us</a></li>
+        <li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
+        <li class="nav-item"><a class="nav-link" href="signup.html">Signup</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Title -->
+<h1 class="title">Welcome to DEMURE</h1>
+
+<!-- Image Cards with Hover Effect -->
+<div class="image-container">
+  <a href="./DECOR'S.html">
+  <div class="card" onmouseover="myfun()" onmouseout="myfun1()">
+    <img src="./1.jpg" alt="Image 1">
+    <span id="name" style="margin-top: 20px; margin-bottom: 100px; font-size: 20px;">DECOR'S</span>
+    <span class="random-name"></span>
+  </div></a>
+  <a href="./Minimals .html">
+  <div class="card" onmouseover="myfun()" onmouseout="myfun1()">
+    <img src="./2.jpg" alt="Image 2">
+    <span id="name1" style="margin-top: 20px; margin-bottom: 80px; font-size: 20px;">Minimals</span>
+    <span class="random-name"></span>
+  </div></a>
+  <div class="card" onmouseover="myfun()" onmouseout="myfun1()">
+    <img src="./3.jpg" alt="Image 3">
+    <span id="name1" style="margin-top: 20px; margin-bottom: 80px; font-size: 20px;">hello</span>
+    <span class="random-name"></span>
+  </div>
+</div>
+
+<!-- About Us Section -->
+<div id="about-us" class="section">
+  <h2>About Us</h2>
+  <p>We are DEMURE, dedicated to creating elegant and user-friendly web designs that meet your business needs.</p>
+</div>
+
+<!-- Contact Us Section -->
+<div id="contact-us" class="section">
+  <h2>Contact Us</h2>
+  <p>Email: contact@demure.com | Phone: +123 456 7890</p>
+</div>
+
+<!-- Footer -->
+<footer>
+  <div class="social-icons">
+    <a href="#"><i class="bi bi-facebook"></i></a>
+    <a href="#"><i class="bi bi-instagram"></i></a>
+    <a href="#"><i class="bi bi-twitter"></i></a>
+  </div>
+  <p>&copy; 2024 DEMURE. All rights reserved.</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
